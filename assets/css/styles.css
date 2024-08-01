@@ -1,0 +1,496 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif !important;
+}
+/* navbar */
+.navbar-nav li a{
+    font-size: 18px;
+    color: black !important;
+}
+.nav-transition{
+    background: white !important;
+    box-shadow: 0px 0px 5px;
+}
+.navbar-nav{
+    justify-content: space-between;
+}
+@media screen and (min-width:992px){
+    .navbar-nav{
+        width: 536px;
+    }
+    
+}
+.nav-item.active{
+    background-color: yellow;
+}
+
+.nav-item:hover{
+    background-color: yellow;
+}
+
+/* ******************************
+            Home Page 
+************************************/
+
+/* events */
+.event > *{
+    text-align: center;
+}
+
+.event .content p{
+    font-size: 18px;
+}
+
+.events{
+    background-color: #f4f4f4;
+    padding:52px 0px 52px 0px;
+}
+
+/* section 3 */
+.advantages-list .list li{
+    list-style-type: square;
+}
+
+.content-right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.event-content{
+    overflow-x: hidden;
+}
+
+.content-left{
+    padding: 54px;
+}
+
+
+/* section 4 */
+
+.section-4{
+    background-color: #f4f4f4;
+    padding: 90px 0px 90px 0px;
+}
+
+.section-4 >*{
+    text-align: center;
+}
+
+.mycard-content{
+    background-color: white;
+}
+
+
+.mycard-img img{
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.mycard-content{
+    padding: 25px 0px 25px 0px;
+}
+
+
+@media screen and (max-width:992px) {
+    .mycard{
+        margin-top: 52px;
+    }
+}
+
+.more-dest-btn .btn{
+    background-color: #ffe500;
+    margin-top:52px;
+}
+
+.section-4-head h3{
+    margin-bottom: 9px;
+    font-size: 36px;
+}
+
+.section-4-content{
+    margin-bottom: 31px;
+}
+
+
+
+/* overlay content */
+
+.more-details-btn .btn{
+    background-color: #ffe500;
+    border-radius: 50px;
+}
+
+.overlay-container{
+    position: absolute;
+    top: 47px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    opacity: 0;
+}
+.overlay-content{
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 25px;
+    text-align: left;
+}
+
+.overlay-content > *{
+    margin-bottom: 25px;
+}
+
+.place-name h4{
+    color: #ffe500;
+}
+
+.details-head h6{
+    font-weight: bold;
+}
+
+.overlay-container:hover{
+    top: 0;
+    opacity: 1;
+    transition: all 0.8s;
+}
+/* section 5 */
+.page-5{
+    background-image: url(../images/pg-1-bg.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: center;
+    background-attachment: fixed;
+    height: 370px;
+    position: relative;
+}
+
+.page-5::before{
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    position: relative;
+}
+
+.pg-5-mycarousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mycard-content .image img,
+.mycarousel-para p{
+    text-align: center;
+    color: white;
+}
+
+.mycarousel-head h4{
+    text-align: center;
+    color: #ffe500;
+    margin-top: 25px;
+    font-size: 28px;
+}
+
+.pg-5-content{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 72px;
+}
+
+.image .couple-img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border: 4px solid #ffe500;
+    padding: 3px;
+}
+
+.mycarousel-content .image{
+    display: flex;
+    justify-content: center;
+}
+
+.mycarousel-para p{
+    max-width: 982px;
+}
+
+.sec-4-img{
+    height:330px !important;
+}
+
+@media  screen and (max-width:767px) {
+    .mycarousel-para p{
+        font-size: 13px;
+    }
+}
+/* section 6 */
+.more-team{
+    margin-top: 22px;
+}
+.member-social .social-icons .facebook,
+.member-social .social-icons .twitter,
+.member-social .social-icons .insta{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe500;
+    border-radius: 3px;
+}
+
+.member-social .social-icons{
+    width: 100px;
+    margin-top: 10px;
+}
+
+.member-name{
+    color: #ffe500;
+}
+
+.role p{
+    color: #ffe500;
+}
+
+.member-service > *{
+    line-height: 19px;
+}
+
+.member-service .service-head,
+.exp .exp-head{
+    font-weight: bolder;
+}
+
+/* footer */
+
+.info-list,
+.contact-us-list{
+    list-style-type: none;
+}
+
+.contact-us-list > li{
+    display: flex ;
+}
+
+.footer{
+    min-height: 264px;
+    margin-top: 46px;
+    padding-bottom: 50px;
+}
+
+.social-icons{
+    justify-content: space-between;
+    width: 100px;
+}
+
+.info-list li{
+    margin-bottom: 9px;
+}
+
+.contact-us-list li{
+    margin-bottom: 18px;
+}
+
+.contact-us-list i{
+    margin-right: 10px;
+}
+
+
+/*******************************************
+                Team Page
+********************************************/
+
+/* section-1 */
+
+.team-title{
+    background-image: url(../images/team-bg.jpg);
+    height: 545px;
+    background-position: 45% 138%;
+}
+
+.team-title::before{
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.team-head{
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    color: white;
+    z-index: 999;
+}
+
+/* section-2 */
+
+.team-sec-2-content .content-head .spec{
+    color: #ffe500;
+    font-weight: bold;
+}
+
+.team-sec-2{
+    min-height: 301px;
+    padding: 50px 0px 50px 0px;
+}
+
+.team-sec-line::before{
+    content: '';
+    display: block;
+    height: 103px;
+    width: 4px;
+    background-color: black;
+}
+
+.team-sec-line{
+    margin-right: 25px;
+}
+
+.team-sec-2-content .content-head{
+    max-width: 505px;
+}
+
+.team-sec-2-content .content{
+    max-width: 537px;
+}
+
+/* section-3 */
+
+.team-sec-3{
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+}
+
+/* ****************************************
+            DESTINATION
+********************************************/
+
+/* section-1 */
+
+.dest-head {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 83%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.dest-sec-1{
+    background-image: url(../images/bg-img-1.jpg);
+    background-position: center;
+}
+
+.dest-sec-line::before{
+    content: '';
+    display: block;
+    height: 150px;
+    width: 4px;
+    background-color: black;
+    margin-right: 25px;
+}
+
+@media screen and (min-width:992px) {
+    .my-mt-3{
+        margin-top: 30px;
+    }
+}
+
+/* ***********************************
+                BLOG
+************************************ */
+
+.blog-sec-1{
+    background-image: url(../images/slider-01.jpg);
+    background-position: top;
+}
+
+.blog-more-details-btn .btn.btn-warning{
+    background-color: #ffe500;
+}
+
+.sec-4-card .second-half{
+    padding: 25px;
+    text-align: left;
+    background-color: white;
+}
+
+.sec-4-card .first-half:hover{
+    scale: 1.1;
+    transition: all .2s;
+}
+
+i.far.fa-calendar {
+    margin-right: 5px;
+}
+
+span.sec-2-date.d-block {
+    font-size: 12px;
+}   
+
+
+/* ****************************
+        CONTACT
+*******************************/
+
+.contact-sec-1{
+    background-image: url(../images/slider-03.jpg);
+    background-position: center;
+}
+
+.contact-info .contact-us-list{
+    padding: 0;
+}
+
+.myform{
+    padding: 50px 0px 50px 0px;
+    min-height: 400px;
+}
+
+.first-half .head-1 .h4 {
+    font-family: 'Indie Flower', cursive;
+    font-weight: 900;
+    font-size: 30px;
+    color: #ffeb3b;
+}
+
+.submit-btn .submit{
+    background-color: #ffe500;
+}
+
+.btn-move{
+    display: flex;
+    justify-content: end;
+}
+
+.form-group .error{
+    color: red;
+    font-size: 12px;
+}
+
+.error input{
+    border: 1px solid red;
+}
+.error textarea{
+    border: 1px solid red;
+}
+
+.form-group.success input{
+    border-color: #0cc477;
+}
+.form-group.success textarea{
+    border-color: #0cc477;
+}
